@@ -1,0 +1,23 @@
+# 内存数据库 H2 配置 - 仅用于本地功能演示，生产环境勿用
+spring:
+  datasource:
+    url: jdbc:h2:mem:example
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  sql:
+    init:
+      schema-locations: classpath:script/init-db-h2.sql
+      platform: h2
+      username: sa
+      password: password
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+# 打印执行SQL
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -14,10 +14,12 @@ import java.io.Serializable;
  * @date 2023/4/16
  */
 @Data
-public class ArticleCreateRequest implements Serializable {
+public class ArticleUpdateRequest implements Serializable {
 
     @Serial
-    private static final long serialVersionUID = -1404245550350711773L;
+    private static final long serialVersionUID = -3339046283506502754L;
+
+    private Long id;
 
     /**
      * 文章名称

@@ -1,14 +1,27 @@
-# Spring Boot 3.0.x 示例代码
+# Spring Boot 3.0 系列教程
 
-> current version: 3.0.3
+Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，它提供了默认配置、内嵌容器、自动依赖管理、强大的监控管理等功能，使开发者能够更快速、更轻松地创建高效的应用程序。
+
+2022年11月25日 Spring Boot 发布了 `3.0.0` 版本，本系列教程将为您带来最新的 Spring Boot 3.0 的开发与应用。
+
+## Spring Boot 3.0 亮点
+
+* 最低支持 Java 17，兼容 Java 19
+* 支持使用 GraalVM 生成本机映像，取代实验性的Spring Native 项目
+* 改进的 Micrometer 和 Micrometer Tracing 可观测性
+* 最低支持 Jakarta EE 9，兼容 Jakarta EE 10
+
+## 本教程版本说明
+
+> - java: 17
+> - spring boot: 3.0.5
 
 ## Spring Boot 基础入门
 
-- [ ] 创建 Spring Boot 项目
-- [ ] Spring Boot 项目配置
+- [*] [Spring Boot Restful Web 服务构建](./spring-boot-restful)
 - [ ] Spring Boot 工程结构
+- [ ] Spring Boot 参数校验
 - [ ] Jackson 集成配置
-- [ ] 全局异常捕获
 
 ## 日志
 

@@ -1,0 +1,7 @@
+# 测试环境配置
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/example
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: sa
+#    password: password

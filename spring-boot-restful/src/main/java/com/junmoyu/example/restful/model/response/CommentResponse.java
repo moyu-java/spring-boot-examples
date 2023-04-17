@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Date;
 
 /**
- * 文章信息响应对象
+ * 文章评论响应对象
  *
  * @author 莫语
  * @date 2023/4/16
@@ -19,33 +19,28 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArticleResponse implements Serializable {
+public class CommentResponse implements Serializable {
 
     @Serial
-    private static final long serialVersionUID = 5595567275902507269L;
+    private static final long serialVersionUID = 9008335791614410529L;
 
     /**
-     * 文章ID - 主键
+     * 评论ID - 主键
      */
     private Long id;
 
     /**
-     * 文章名称
+     * 评论人
      */
-    private String name;
+    private String publisher;
 
     /**
-     * 文章作者
+     * 创建时间/评论时间
      */
-    private String author;
+    private Date createTime;
 
     /**
-     * 文章内容
+     * 评论内容
      */
     private String content;
-
-    /**
-     * 评论列表
-     */
-    private List<String> comments;
 }
