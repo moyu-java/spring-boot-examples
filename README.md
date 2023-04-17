@@ -18,7 +18,7 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 
 ## Spring Boot 基础入门
 
-- [*] [Spring Boot Restful Web 服务构建](./spring-boot-restful)
+- [x] [Spring Boot Restful Web 服务构建](./spring-boot-restful)
 - [ ] Spring Boot 工程结构
 - [ ] Spring Boot 参数校验
 - [ ] Jackson 集成配置
