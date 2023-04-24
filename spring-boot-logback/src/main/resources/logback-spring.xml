@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="false" scan="true" scanPeriod="60 seconds">
+    <!-- 第一部分：参数配置 -->
+    <!-- 日志存储路径 -->
+    <property name="LOG_HOME" value="./logs"/>
+    <!-- 输出到控制台的日志的输出格式（输出结果带有颜色） -->
+    <property name="LOG_CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %yellow(%X{traceId}) [%yellow(%thread)] %green(%40.40logger{40}) %highlight(%class{0}:%line): %msg%n"/>
+    <!-- 输出到文件中的日志的输出格式 -->
+    <property name="LOG_FILE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %X{traceId} [%thread] %40.40logger{40} %class{0}:%line: %msg%n"/>
+
+    <!-- 第二部分：日志输出策略 -->
+    <!-- 文件输出：全日志输出策略 - 包含全部日志 -->
+    <appender name="DailyFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/common.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 日志分片后的日志名（按时间及大小分） -->
+            <FileNamePattern>${LOG_HOME}/common.%d{yyyy.MM.dd}-%i.log</FileNamePattern>
+            <!-- 单个日志文件大小 -->
+            <MaxFileSize>100MB</MaxFileSize>
+            <!-- 日志文件保留天数 - 自动清除老的日志文件，防止磁盘爆满 -->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- 日志输出格式 -->
+            <pattern>${LOG_FILE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出：异常日志输出策略 - 仅包含 error 级别的日志 -->
+    <appender name="ErrorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/error.%d{yyyy.MM.dd}-%i.log</FileNamePattern>
+            <MaxFileSize>100MB</MaxFileSize>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${LOG_FILE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 控制台输出日志：包含全部日志 -->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${LOG_CONSOLE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 第三部分：根输出器（Root Logger）配置 -->
+    <!-- 同时输出三种策略的日志 -->
+    <root level="info">
+        <appender-ref ref="DailyFile"/>
+        <appender-ref ref="ErrorFile"/>
+        <appender-ref ref="Console"/>
+    </root>
+</configuration>
