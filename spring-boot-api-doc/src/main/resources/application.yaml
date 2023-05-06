@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-api-doc
+# 接口文档配置
+springdoc:
+  apiDocs:
+    enabled: true
+  swagger-ui:
+    enabled: true
