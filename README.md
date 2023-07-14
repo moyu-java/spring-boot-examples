@@ -14,7 +14,7 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 ## 本教程版本说明
 
 > - java: 17
-> - spring boot: 3.0.5
+> - spring boot: 3.1.1
 
 ## Spring Boot 基础入门
 
@@ -25,7 +25,7 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 
 ## 日志
 
-- [ ] 使用 logback 作为日志实现
+- [x] 使用 logback 作为日志实现
 - [ ] 使用 log4j2 作为日志实现
 
 ## RESTFUL API开发
