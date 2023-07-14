@@ -212,7 +212,7 @@ public class ArticleRepository {
 
 基础设施层包含组件配置、常量设置、全局异常捕获处理、工具类、数据源、第三方 HTTP API 调用等等。
 
-本项目中的 `com.junmoyu.example.restful.infrastructure` 包就是主要的基础设施层的代码，其中可以包含配置、常量、异常、工具等。
+本项目中的 `com.junmoyu.example.restful.infra` 包就是主要的基础设施层的代码，其中可以包含配置、常量、异常、工具等。
 
 另外 `com.junmoyu.example.restful.repository.mapper` 包里面数据源相关的 mapper 可以将其归类于 Repository 也可以归类于基础设施层。
 
@@ -315,7 +315,7 @@ public class GlobalExceptionHandler {
     }
 }
 ```
-在本项目中，即使用此种方式做全局异常处理。见 `com.junmoyu.example.restful.infrastructure.exception.GlobalExceptionHandler`。
+在本项目中，即使用此种方式做全局异常处理。见 `com.junmoyu.example.restful.infra.exception.GlobalExceptionHandler`。
 
 3. 使用自定义的异常处理类（不常使用）
 

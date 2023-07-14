@@ -1,4 +1,4 @@
-package com.junmoyu.example.restful.infrastructure.util;
+package com.junmoyu.example.restful.infra.util;
 
 /**
  * 时间工具类

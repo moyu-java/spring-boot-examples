@@ -1,4 +1,4 @@
-package com.junmoyu.example.restful.infrastructure.exception;
+package com.junmoyu.example.restful.infra.exception;
 
 import com.junmoyu.example.restful.model.base.Response;
 import jakarta.validation.ConstraintViolation;

@@ -1,4 +1,4 @@
-package com.junmoyu.example.restful.infrastructure.config;
+package com.junmoyu.example.restful.infra.config;
 
 
 /**

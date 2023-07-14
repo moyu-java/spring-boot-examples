@@ -1,4 +1,4 @@
-package com.junmoyu.example.restful.infrastructure.constant;
+package com.junmoyu.example.restful.infra.constant;
 
 /**
  * @author moyu.jun

@@ -7,7 +7,7 @@ spring:
     password: password
   sql:
     init:
-      schema-locations: classpath:script/init-db-h2.sql
+      schema-locations: classpath:sql/init-db-h2.sql
       platform: h2
       username: sa
       password: password

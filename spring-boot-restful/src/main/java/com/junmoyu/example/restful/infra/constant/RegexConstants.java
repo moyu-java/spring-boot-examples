@@ -1,4 +1,4 @@
-package com.junmoyu.example.restful.infrastructure.constant;
+package com.junmoyu.example.restful.infra.constant;
 
 /**
  * 正则表达式常量
