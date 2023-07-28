@@ -37,7 +37,7 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 
 ## 数据库集成
 
-- [ ] 使用 Spring Data JPA 访问数据库
+- [ ] 使用 Spring Boot 集成 redis
 - [ ] 使用 MyBatis 访问数据库
 - [ ] 配置多数据源
 - [ ] 使用数据库连接池
@@ -45,8 +45,6 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 
 ## 缓存和消息队列
 
-- [ ] 使用 Spring Cache 访问缓存
-- [ ] 使用 Redis 作为缓存实现
 - [ ] 使用 Spring Boot 集成 RabbitMQ
 - [ ] 使用 Spring Boot 集成 Kafka
 - [ ] 使用 Spring Boot 集成 ActiveMQ
