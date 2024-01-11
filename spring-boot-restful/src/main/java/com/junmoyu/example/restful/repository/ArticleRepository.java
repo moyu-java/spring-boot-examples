@@ -17,7 +17,6 @@ import java.util.List;
  * 数据源： MySQL、PostgreSQL、Redis、MongoDB、ElasticSearch、File
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @Slf4j
 @Repository

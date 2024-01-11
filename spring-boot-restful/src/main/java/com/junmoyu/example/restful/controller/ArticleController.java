@@ -19,7 +19,6 @@ import java.util.List;
  * 主要用于接口定义，参数校验，权限认证，无业务逻辑
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @RestController
 @RequestMapping("articles")

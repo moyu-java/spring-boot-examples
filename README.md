@@ -1,4 +1,4 @@
-# Spring Boot 3.0 系列教程
+# Spring Boot 3.0 系列
 
 Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，它提供了默认配置、内嵌容器、自动依赖管理、强大的监控管理等功能，使开发者能够更快速、更轻松地创建高效的应用程序。
 
@@ -11,66 +11,13 @@ Spring Boot 是一款用于简化 Java 应用程序开发和部署的框架，�
 * 改进的 Micrometer 和 Micrometer Tracing 可观测性
 * 最低支持 Jakarta EE 9，兼容 Jakarta EE 10
 
-## 本教程版本说明
+## 本项目版本说明
 
 > - java: 17
-> - spring boot: 3.1.1
+> - spring boot: 3.1.5
 
-## Spring Boot 基础入门
+## 项目清单
 
-- [x] [Spring Boot Restful Web 服务构建](./spring-boot-restful)
-- [ ] Spring Boot 工程结构
-- [ ] Spring Boot 参数校验
-- [ ] Jackson 集成配置
-
-## 日志
-
-- [x] 使用 logback 作为日志实现
-- [ ] 使用 log4j2 作为日志实现
-
-## RESTFUL API开发
-
-- [ ] 创建 RESTFUL API
-- [ ] 参数校验
-- [ ] 跨域支持
-- [ ] 文件上传
-
-## 数据库集成
-
-- [ ] 使用 Spring Data JPA 访问数据库
-- [ ] 使用 MyBatis 访问数据库
-- [ ] 配置多数据源
-- [ ] 使用数据库连接池
-- [ ] 配置事务管理
-
-## 缓存和消息队列
-
-- [ ] 使用 Spring Cache 访问缓存
-- [ ] 使用 Redis 作为缓存实现
-- [ ] 使用 Spring Boot 集成 RabbitMQ
-- [ ] 使用 Spring Boot 集成 Kafka
-- [ ] 使用 Spring Boot 集成 ActiveMQ
-
-## 安全
-
-- [ ] 使用 Spring Security 配置安全认证
-- [ ] 配置 HTTPS 和 SSL
-- [ ] 配置 XSS 和 CSRF 防护
-- [ ] 使用 JSON Web Token 实现认证和授权
-- [ ] 使用 Spring Security OAuth2 实现授权服务器和资源服务器
-
-## 测试
-
-- [ ] 使用 JUnit 进行单元测试
-- [ ] 使用 Mockito 进行单元测试
-- [ ] 使用 Spring Boot Test 进行集成测试
-- [ ] 使用 REST Assured 进行 API 测试
-- [ ] 配置测试数据和测试环境
-
-## 部署和监控
-
-- [ ] 使用 Docker 部署 Spring Boot 应用
-- [ ] 配置健康检查和自动重启
-- [ ] 使用 Actuator 监控应用状态
-- [ ] 配置应用日志和指标监控
-- [ ] 使用 ELK Stack 实现日志分析和可视化监控
+- [x] [Spring Boot 3.0 - Restful Web 服务（1）](./spring-boot-restful)
+- [x] [Spring Boot 3.0 - 日志记录 Logback（2）](./spring-boot-logback)
+- [x] [Spring Boot 3.0 - 接口文档 OpenAPI（3）](./spring-boot-openapi)

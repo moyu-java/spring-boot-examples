@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * 服务启动器
  *
  * @author 莫语
- * @date 2023/4/17
  */
 @Slf4j
 @EnableAsync

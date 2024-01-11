@@ -15,7 +15,6 @@ import java.io.Serializable;
  * 基础分页查询对象
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @Data
 @Builder

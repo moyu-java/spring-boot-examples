@@ -8,7 +8,6 @@ import java.util.Date;
  * 文章实体类
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @Data
 public class ArticleEntity {

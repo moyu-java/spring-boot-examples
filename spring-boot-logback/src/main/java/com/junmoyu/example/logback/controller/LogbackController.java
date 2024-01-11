@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  * LogbackController
  *
  * @author 莫语
- * @date 2023/4/17
  */
 @Slf4j
 @RestController

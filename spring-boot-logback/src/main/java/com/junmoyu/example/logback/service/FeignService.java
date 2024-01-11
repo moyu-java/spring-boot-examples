@@ -7,7 +7,6 @@ import org.springframework.cloud.openfeign.FeignClient;
  * feign client
  *
  * @author 莫语
- * @date 2023/4/24
  */
 @FeignClient(name = "default", url = "https://blog.junmoyu.com", path = "/api", configuration = FeignInterceptor.class)
 public interface FeignService {

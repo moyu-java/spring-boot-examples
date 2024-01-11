@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.5</version>
     </parent>
     <groupId>com.junmoyu.example</groupId>
     <artifactId>spring-boot-restful</artifactId>
@@ -19,7 +19,7 @@
         <h2.version>2.2.220</h2.version>
         <mybatis.version>3.0.2</mybatis.version>
         <snakeyaml.version>2.0</snakeyaml.version>
-        <spring-boot.version>3.1.1</spring-boot.version>
+        <spring-boot.version>3.1.5</spring-boot.version>
     </properties>
 
     <dependencies>

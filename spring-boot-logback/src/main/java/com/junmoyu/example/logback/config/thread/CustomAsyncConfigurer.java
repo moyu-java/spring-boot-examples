@@ -17,7 +17,6 @@ import java.util.concurrent.Executor;
  * 自定义线程池，替换 Spring 默认的线程池
  *
  * @author 莫语
- * @date 2023/4/18
  */
 @Slf4j
 @Component
@@ -45,7 +44,6 @@ public class CustomAsyncConfigurer implements AsyncConfigurer {
      * 实现 TaskDecorator 接口，运行任务（Runnable）之前，保存当前线程的 MDC 上下文，并在任务执行完毕后清除 MDC 上下文，以确保在多线程环境下，MDC 上下文的正确传递和清理。
      *
      * @author 莫语
-     * @date 2023/4/18
      */
     public static class TraceIdTaskDecorator implements TaskDecorator {
         @NonNull

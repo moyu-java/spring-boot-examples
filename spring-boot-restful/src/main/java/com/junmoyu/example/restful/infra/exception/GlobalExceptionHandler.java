@@ -22,7 +22,6 @@ import java.util.stream.Collectors;
  * 全局异常捕获处理
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @Slf4j
 @RestControllerAdvice

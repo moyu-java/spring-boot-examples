@@ -2,7 +2,6 @@ package com.junmoyu.example.restful.infra.constant;
 
 /**
  * @author moyu.jun
- * @date 2022/11/26
  */
 public class CommonConstants {
 

@@ -8,7 +8,6 @@ import feign.RequestTemplate;
  * feign 拦截器，设置 Trace Id 透传
  *
  * @author 莫语
- * @date 2023/4/24
  */
 public class FeignInterceptor implements RequestInterceptor {
     @Override

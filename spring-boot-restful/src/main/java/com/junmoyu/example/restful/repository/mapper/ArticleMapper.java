@@ -10,7 +10,6 @@ import java.util.List;
  * 文章数据操作接口
  *
  * @author 莫语
- * @date 2023/4/14
  */
 @Mapper
 public interface ArticleMapper {

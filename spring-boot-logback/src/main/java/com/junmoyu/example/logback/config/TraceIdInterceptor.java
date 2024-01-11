@@ -12,7 +12,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
  * trace id 拦截器
  *
  * @author 莫语
- * @date 2023/4/24
  */
 @Slf4j
 public class TraceIdInterceptor implements HandlerInterceptor {

@@ -8,7 +8,6 @@ import java.util.concurrent.*;
 
 /**
  * @author 莫语
- * @date 2023/4/18
  */
 public class ThreadPoolExecutorMdcWrapper extends ThreadPoolExecutor {
 

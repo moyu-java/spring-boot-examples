@@ -9,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * Web 配置
  *
  * @author 莫语
- * @date 2023/4/24
  */
 @Configuration
 @RequiredArgsConstructor

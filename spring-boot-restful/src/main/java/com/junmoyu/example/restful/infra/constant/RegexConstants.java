@@ -4,7 +4,6 @@ package com.junmoyu.example.restful.infra.constant;
  * 正则表达式常量
  *
  * @author moyu
- * @date 2023/2/25
  */
 public class RegexConstants {
 

@@ -11,7 +11,6 @@ import java.util.concurrent.Callable;
  * trace id utils.
  *
  * @author 莫语
- * @date 2023/4/24
  */
 public class TraceIdUtils {
 

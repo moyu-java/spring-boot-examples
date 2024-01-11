@@ -13,7 +13,6 @@ import java.util.concurrent.Future;
  * ThreadPoolTaskExecutor mdc wrapper.
  *
  * @author 莫语
- * @date 2023/4/18
  */
 public class ThreadPoolTaskExecutorMdcWrapper extends ThreadPoolTaskExecutor {
 

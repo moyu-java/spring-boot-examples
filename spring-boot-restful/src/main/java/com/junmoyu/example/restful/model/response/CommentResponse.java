@@ -13,7 +13,6 @@ import java.util.Date;
  * 文章评论响应对象
  *
  * @author 莫语
- * @date 2023/4/16
  */
 @Data
 @Builder
